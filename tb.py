@@ -7,7 +7,7 @@ from PIL import Image
 geocoder_api_server = "http://geocode-maps.yandex.ru/1.x/"
 geocoder_params = {
     "apikey": "40d1649f-0493-4b70-98ba-98533de7710b",
-    "geocode": 'Москва, ул. Ак. Королева, 12',
+    "geocode": input('Введите полный адрес:'),
     "format": "json"}
 
 response = requests.get(geocoder_api_server, params=geocoder_params)
